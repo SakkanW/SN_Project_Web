@@ -18,9 +18,33 @@ class FindPatient extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	public function __construct()
+	{
+	//call CodeIgniter's default Constructor
+		parent::__construct();
+	
+	 
+	 if(!$this->session->userdata('id'))
+	 {
+	  redirect('login');
+	 }
+	
+	
+	//load database libray manually
+	// $this->load->database('group_name',TRUE);
+	
+	//load Model
+		$this->load->model('createpatient_model');
+	}
+
 	public function index()
 	{
+		$result = $this->createpatient_model->show();
 		$data = array('content'=>'find-patient');
+		$data['createpatient'] = $result;
 		$this->load->view('layouts/main',$data);
 	}
+
+
 }

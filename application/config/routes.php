@@ -49,11 +49,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['login'] = 'login';
+$route['register'] = 'register';
 $route['dashboard'] = 'dashboard';
+$route['private_area'] = 'private_area';
 $route['createpatient'] = 'createpatient';
+
+$route['test'] = 'test';
+$route['patient_his'] = 'patient_his';
+
+$route['conclutions'] = 'conclutions';
+$route['environ'] = 'environ';
+$route['interview'] = 'interview';
+$route['symtom'] = 'symtom';
+$route['loginmobile'] = 'loginmobile';
+$route['loginpatient'] = 'loginpatient';
+$route['kidneymobile'] = 'kidneymobile';
+$route['patientinfomobile'] = 'patientinfomobile';
+$route['user_management'] = 'user_management';
+$route['images'] = 'images';
+$route['food_mobile'] = 'food_mobile';
+$route['forgetpassword'] = 'forgetpassword';
+$route['userinfo'] = 'userinfo';
 $route['findpatient'] = 'findpatient';
+$route['patient_mobile'] = 'patient_mobile';
+$route['food'] = 'food';
+$route['food_edit'] = 'food_edit';
+$route['kidney'] = 'kidney';
+
+// $route['createpatient/create'] = 'createpatient/create';
+// $route['news/(:any)'] = 'news/view/$1';
+// $route['news'] = 'news';
+// $route['(:any)'] = 'pages/view/$1';
+
+
+
 

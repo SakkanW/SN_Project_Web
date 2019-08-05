@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/SN_Project_Web/';
+$config['base_url'] = 'http://e251be37.ngrok.io/SN_Project_Web/';
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +324,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'yYfCNGDZ3QtgMHw5fo5htH9xE9QmtqAR';
 
 /*
 |--------------------------------------------------------------------------
@@ -521,3 +521,15 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+
+/*$config['protocol'] = 'sendmail';
+$config['mailpath'] = '/usr/sbin/sendmail';
+$config['charset'] = 'iso-8859-1';
+$config['wordwrap'] = TRUE;
+*/
+$config['protocol'] = 'smtp';
+$config['smtp_host']='ssl://smtp.mailgun.org';
+$config['smtp_user']='postmaster@cpatt.mailgun.org';
+$config['smtp_pass']='youpassword';
+$config['smtp_port']='465';
